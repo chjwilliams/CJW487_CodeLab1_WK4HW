@@ -39,13 +39,17 @@ public class PlayerController : MonoBehaviour
 	private static int health;					//	Health shared by all players
 	public int Health 							//	Properties for health variable
 	{ 
-		get { return health;} 
-		set {	
-				if (value < 0)
-				{
-					value = 0;
-				}
+		get 
+		{ 
+			return health;
+		} 
+		set 
+		{	
+			if (value < 0)
+			{
+				value = 0;
 			}
+		}
 	}
 
     /*--------------------------------------------------------------------------------------*/

@@ -3,11 +3,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BoundarySingletonScript : MonoBehaviour {
+/*--------------------------------------------------------------------------------------*/
+/*																						*/
+/*	BoundarySingletonScript: Singleton for the game's boundaries						*/
+/*			Functions:																	*/
+/*					public:																*/
+/*																					    */
+/*					proteceted:															*/
+/*                                                                                      */
+/*					private:															*/
+/*						void Start ()													*/
+/*																						*/
+/*--------------------------------------------------------------------------------------*/
+public class BoundarySingletonScript : MonoBehaviour 
+{
+	public static BoundarySingletonScript instance;			//	Instance of Boundary Script
 
-	public static BoundarySingletonScript instance;
-
-	// Use this for initialization
+	/*--------------------------------------------------------------------------------------*/
+    /*																						*/
+    /*	Start: Runs once at the begining of the game. Initalizes variables.					*/
+    /*																						*/
+    /*--------------------------------------------------------------------------------------*/
 	void Start () 
 	{
 		if (instance == null)

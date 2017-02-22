@@ -19,17 +19,22 @@ using UnityEngine;
 /*--------------------------------------------------------------------------------------*/
 public class DangerSquare : MonoBehaviour 
 {
-	//	Constant Variables... okay
 	public const float _MAX_SPEED = 8;			//	Maximum speed the Danger Sqaure can go
 	public float MAX_SPEED						//	Cannot access public const in other classes?
 	{
-		get { return _MAX_SPEED;}
+		get 
+		{ 
+			return _MAX_SPEED;
+		}
 	}
 
 	public float moveSpeedX = 1.0f;				//	How fast the Danger Square moves in the horizontal direction
 	public float MoveSpeedX 					//	Properties for moveSpeedX
 	{
-		get {	return moveSpeedX;}
+		get 
+		{	
+			return moveSpeedX;
+		}
 		set
 		{
 			if (moveSpeedX > MAX_SPEED)
@@ -41,7 +46,10 @@ public class DangerSquare : MonoBehaviour
 	public float moveSpeedY = 1.0f;				//	How fast the Danger Square moves in the vertical direction
 	public float MoveSpeedY 					//	Properties for moveSpeedY
 	{
-		get {	return moveSpeedY;}
+		get 
+		{	
+			return moveSpeedY;
+		}
 		set
 		{
 			if (moveSpeedY > MAX_SPEED)

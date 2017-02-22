@@ -21,13 +21,13 @@ public class GameManager : MonoBehaviour
 	//	Static Varibales
 	public static GameManager instance;				//	This instance of Game Manager
 
+	//	Public variables
 	public string playerName = "AAA";
 	public KeyCode restartLevel = KeyCode.Return;	//	Restarts level at the YOUWIN scene
 	public PlayerController player;					//	Reference to player objetcs for health
 	public DangerSquare dangerSquare;				//	Reference to danger square for speed
-
-	//	Public Variables
 	public GameObject[] boundaries;					//	Holds the position of our boundaries 0 = top; 1 = right; 2 = bottom; 3 = left;
+
     /*--------------------------------------------------------------------------------------*/
     /*																						*/
     /*	Start: Runs once at the begining of the game. Initalizes variables.					*/
